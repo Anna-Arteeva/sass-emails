@@ -4,23 +4,27 @@ body {
   -ms-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
-  background-color: #EFF2F4;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  background-color: $grey-11;
+  font-family: $font-family;
+  font-size: $font-size;
   font-weight: 400;
-  color: #515E6D;
-  line-height: 1.5em; }
+  color: $grey-base;
+  line-height: 1.5em;
+}
 
 .main-table {
   border-collapse: collapse;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
-  background-color: #EFF2F4; }
+  background-color: $grey-11;
+}
+
+.main-table-td {
+}
 
 .second-table {
   width: 640px;
   border-collapse: collapse;
   mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt; }
-
-/*# sourceMappingURL=email.css.map */
+  mso-table-rspace: 0pt;
+}

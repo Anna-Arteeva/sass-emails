@@ -1,1 +1,5 @@
 // run sass email.scss email.css
+// sass --watch email.scss:email.css
+
+@import "scss/variables";
+@import "scss/layout";
