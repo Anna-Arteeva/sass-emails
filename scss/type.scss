@@ -1,0 +1,98 @@
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 { font-size: 30px; font-weight: 600; }
+h2 { font-size: 24px; font-weight: 600; }
+h3 { font-size: 20px; font-weight: 600; }
+h4 { font-size: 18px; font-weight: 600; }
+h5 { font-size: 16px; font-weight: 600; }
+h6 { font-size: 14px; font-weight: 600; }
+
+strong, .strong {
+  font-weight: 600;
+}
+
+.small {
+  font-size: 14px !important;
+  line-height: 1.5rem;
+}
+
+.big {
+  font-size: 18px !important;
+  line-height: 1.5em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+//text
+.text-unstyled {
+  font-family: $font-family;
+}
+
+.text {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+.text-base {
+  @extend .text;
+  color: $grey-base;
+}
+
+.text-white {
+  @extend .text;
+  color: #ffffff;
+}
+
+.text-base-b {
+  @extend .text-unstyled;
+  font-size: $font-size;
+  font-weight: 600;
+  color: $grey-base;
+}
+
+.text-base-light {
+  @extend .text-unstyled;
+  color: $grey-6;
+}
+
+.text-base-muted {
+  @extend .text-unstyled;
+  color: $grey-8;
+}
+
+.text-attention {
+  @extend .text-unstyled;
+  color: $mint;
+}
+
+.no-underline {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $mint;
+  }
+}
+
+.link-base {
+  @extend .text-unstyled;
+  color: $grey-base;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $mint;
+  }
+}

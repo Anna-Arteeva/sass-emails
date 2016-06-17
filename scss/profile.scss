@@ -1,0 +1,15 @@
+.avatar-td {
+  width: 100px;
+}
+
+.avatar-circle {
+  width: 100px;
+  height: 100px;
+  @include border-radius(50%);
+  overflow: hidden;
+}
+
+.avatar-img {
+  width: 100%;
+  max-height: 100%;
+}

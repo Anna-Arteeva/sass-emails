@@ -1,0 +1,8 @@
+.listing {
+  border: 1px solid $outline;
+  @include border-radius();
+}
+
+.listing-img {
+  width: 100%;
+}

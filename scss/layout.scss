@@ -4,7 +4,7 @@ body {
   -ms-text-size-adjust: 100%;
   margin: 0;
   padding: 0;
-  background-color: $grey-11;
+  background-color: #ffffff;
   font-family: $font-family;
   font-size: $font-size;
   font-weight: 400;
@@ -12,11 +12,9 @@ body {
   line-height: 1.5em;
 }
 
+
 .main-table {
-  border-collapse: collapse;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
-  background-color: $grey-11;
+  background-color: #ffffff;
 }
 
 .main-table-td {
@@ -27,4 +25,41 @@ body {
   border-collapse: collapse;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 480px) {
+  td[class=wrapper] {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .mobile-view, td[class=mobile-view], img[class=mobile-view] {
+    width: 320px !important;
+    height: auto !important;
+  }
+
+  td[class=clump] {
+    display: block !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  td[class=aligncenter] {
+    width: 300px !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+}
+
+.table-vertical-border {
+  border-right: 1px solid $outline;
+  border-left: 1px solid $outline;
+  background-color: #ffffff;
+}
+
+.back-grey {
+  background-color: $grey-11;
 }

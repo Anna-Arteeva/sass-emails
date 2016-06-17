@@ -1,0 +1,5 @@
+.message {
+  background-color: $grey-10;
+  @include border-radius(3px);
+  padding: 15px 20px;
+}

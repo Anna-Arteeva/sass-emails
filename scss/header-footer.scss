@@ -1,0 +1,52 @@
+.reply-directly-table {
+  background-color: $grey-3;
+  color: #ffffff;
+}
+
+.logo-text {
+  @extend .text-base-b;
+  padding: 7px 20px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.headline {
+  background-color: $mint-light;
+  @include border-top-radius();
+
+  td {
+    padding: 10px 25px;
+  }
+}
+
+.headline__negative {
+  background-color: $grey-3;
+  @include border-top-radius();
+
+  td {
+    padding: 10px 25px;
+  }
+}
+
+.headline-h1 {
+  @extend .text-unstyled;
+  font-family: $font-family;
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0;
+  padding: 10px 0 5px 0;
+}
+
+.headline-h2 {
+  @extend .text-unstyled;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+  padding: 5px 0 10px 0;
+}
+
+.table-footer {
+  width: 60%;
+  min-width: 300px;
+}

@@ -2,4 +2,15 @@
 // sass --watch email.scss:email.css
 
 @import "scss/variables";
+@import "scss/prefix";
+@import "scss/utilities";
+@import "scss/type";
+@import "scss/spacing";
 @import "scss/layout";
+
+@import "scss/header-footer";
+@import "scss/profile";
+@import "scss/message";
+@import "scss/btn";
+@import "scss/listing";
+@import "scss/expire-message";

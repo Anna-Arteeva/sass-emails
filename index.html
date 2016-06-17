@@ -12,21 +12,1569 @@
 
 </head>
 <body>
+<!-- Show it in every email --->
+<table class="reply-directly-table"
+       width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="p-y-5" align="center" width="100%">
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td align="center">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td class="p-r-10 p-y-5" align="center" valign="center" width="12">
+                                    <img class="img" src="img/icon-envelope.png" width="20" height="20">
+                                </td>
+                                <td valign="center">
+                                    <p class="text-white">
+                                        {{T "You can message to Name replying directly to this email", Name}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 
 <table class="main-table"
         width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
     <tr>
         <td class="main-table-td" align="center" width="100%">
-
-            <!-- Small Text -->
-            <table class="second-table" width="640" align="center" cellpadding="0" cellspacing="0" border="0">
+            <!-- Header-logo-->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td>
-                        hello, here is the tabel
+                        <table class="table table-header" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="p-t-10" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <a href="https://housinganywhere.com/" class="text-base-light" target="_blank">
+                                        <img src="img/housinganywhere-logo-email-header.png"
+                                             alt="Housing Anywhere logo" width="30" height="30" border="0" class="img header-logo">
+                                    </a>
+                                    <div class="logo-text">
+                                        <a href="https://housinganywhere.com/" class="text-base" target="_blank" style="text-decoration: none;">
+                                            Housing Anywhere
+                                        </a>
+                                    </div>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
             </table>
-            <!-- End Small Text -->
+            <!-- End Header-logo -->
+
+            <!-- Headline-->
+<div>
+            <!-- email: responce--tenant, responce--advertiser -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "New message from name", Name}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: changed-dates--to-advertiser -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "Name has changed dates", Name}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- End Headline -->
+
+            <!-- email: changed-dates--to-tenant -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "You have changed the dates"}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- End Headline -->
+
+            <!-- email: offer--to-advertiser -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "You have invited Name to book your place", Name}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: offer--to-tenant -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "You have invited Name to book your place", Name}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-declined-by-advertiser--to-advertiser -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline__negative" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "You have declined name inquiry", Name}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-declined-by-advertiser--to-tenant -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline__negative" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "Name declined your inquiry", Name}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: booking-request--to-advertiser -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "Respond to name inquiry", Name}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: booking-request--to-tenant -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "Your request has been sent"}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-cancelled-by-tenant--to-advertiser -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline__negative" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "Name has cancelled the booking request", Name}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-declined-by-advertiser--to-tenant -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline__negative" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "You have cancelled the booking request"}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: booking-confirmation--to-advertiser -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "Congratulations! Your place is booked!"}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: booking-confirmation--to-tenant -->
+            <table width="640" class="mobile-view table" align="center" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <table class="table headline" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="" valign="top" align="center">
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+
+                                    <h1 class="headline-h1">
+                                        {{T "Congratulations! Your booking is completed!"}}
+                                    </h1>
+                                    <h2 class="headline-h2">
+                                        {{T "n months at listing type room on city-country", n, type}} <!-- TODO show number of months (end date - start date) and listing type (Private room, apartment, studio, shared room etc)-->
+                                    </h2>
+
+                                    <div class="indent">
+                                        &nbsp;
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+</div>
+            <!-- End Headline -->
+
+
+
+
+            <!-- Tenant profile -->
+<div>
+            <!-- email: everywhere the same apart  booking-confirmation--to-advertiser, --to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-20">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="avatar-td p-r-20" valign="top">
+                                    <div class="avatar-circle">
+                                        <a class="link-base" href="#talk" target="_blank" border="0">
+                                            <img class="avatar-img" src="img/avatar.jpg" alt="Avatar">
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="" valign="middle">
+                                    <h4 class="h4">
+                                        <a class="link-base" href="#talk" target="_blank">
+                                            Marionne <!-- tenant's name -->
+                                        </a>
+                                    </h4>
+                                    <p class="text-base">
+                                        {{T "from"}} {{Country}}
+                                    </p>
+                                    <p class="text-attention small">
+                                        {{T "Verified profile"}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: booking-confirmation--to-advertiser, --to-tenant (show advertiser contact details instead) -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-t-20 p-b-25">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="avatar-td p-r-20" valign="top">
+                                    <div class="avatar-circle">
+                                        <a class="link-base" href="#talk" target="_blank" border="0">
+                                            <img class="avatar-img" src="img/avatar.jpg" alt="Avatar">
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="" valign="middle">
+                                    <h4 class="h4">
+                                        <a class="link-base" href="#talk" target="_blank">
+                                            Marionne <!-- tenant's name -->
+                                        </a>
+                                    </h4>
+                                    <p class="text-base p-b-10">
+                                        {{T "from"}} {{Country}}
+                                    </p>
+                                    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td class="p-r-10 p-t-5" align="center" valign="top" width="12">
+                                                <img class="img" src="img/icon-phone.png" width="16" height="17">
+                                            </td>
+                                            <td>
+                                                <p class="text-base">
+                                                    {{Phone number}}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-r-10 p-t-5" align="center" valign="top" width="12">
+                                                <img class="img" src="img/icon-email.png" width="16" height="17">
+                                            </td>
+                                            <td>
+                                                <p class="text-base">
+                                                    {{Email}}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-mint">
+                    </td>
+                </tr>
+            </table>
+</div>
+            <!-- End Tenant profile -->
+
+
+
+
+            <!-- Content block -->
+<div>
+            <!-- email: responce--to-tenant, --to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-t-10 p-x-5">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <div class="message-arrow p-l-40">
+                                        <img src="img/message-arrow.png" class="img">
+                                    </div>
+                                    <div class="message">
+                                        Can I borrow your bike?
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: changed-dates--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Do you like this place and want to move forward? Don’t waste time, request a booking and ensure your accommodation in city for the coming months!"}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: offer--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Name has 48 hours to accept your invitation and complete the booking. After the payment has been processed, we will send you a confirmation of the booking and the tenants contact details. We will hold on to the payment until the tenant has completed the move in and then using the payout method you marked in your profile complete the transaction.", Name}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: offer--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Name has 48 hours to accept your invitation and complete the booking. After the payment has been processed, we will send you a confirmation of the booking and the tenants contact details. We will hold on to the payment until the tenant has completed the move in and then using the payout method you marked in your profile complete the transaction.", Name}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-declined-by-advertiser--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Sometimes it just doesn't work out, but don't stop, keep searching! There are many other beautiful places to rent in city make sure to have a look on our website", Name}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: booking-request--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Name has 48 hours to accept your request. You should still keep searching and sending requests to multiple places. Once you have been accepted, all other requests will be cancelled automatically", Name}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-cancelled-by-tenant--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Sometimes it just doesn't work out, but don't stop, keep searching. There are many other people who are looking for a place to stay in City. Make sure you have a full description of you place and the calendar is up to date.", City}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-cancelled-by-tenant--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Sometimes it just doesn't work out, but don't stop, keep searching! There are many other beautiful places to rent in city make sure to have a look on our website", City}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: special-offer--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Name has 48 hours to accept your invitation and complete the booking. After the payment has been processed, we will send you a confirmation of the booking and the tenants contact details. We will hold on to the payment until the tenant has completed the move in and then using the payout method you marked in your profile complete the transaction.", Name}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: special-offer--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "You have 48 hours to proceed with the payment and complete the booking. After the payment has been completed, we will send you a confirmation of the booking and the advertiser's details. We will hold on to the payment until 48 hours after the move in and then send it to the advertiser"}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: special-offer--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "Sometimes it does not work out, but don't stop, keep searching! There are many other people who are looking for a place to stay in Rotterdam. Make sure that you have a full description of your place and the calendar is up to date"}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: special-offer--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <p class="text-base">
+                                        {{T "
+                                        Sometimes it just doesn't work out, but don't stop, keep searching! There are many other beautiful places to rent in city make sure to have a look on our website", City}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+</div>
+            <!-- End Content block -->
+
+
+
+            <!-- Button -->
+            <div>
+            <!-- email: responce--to-tenant, responce--to-advertiser, booking-confirmation--to-advertiser, booking-confirmation--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "send a message"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: changed-dates--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Invite to book or decline"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: changed-dates--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Send a message or change decision"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: offer--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Send a message or change decision"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: changed-dates--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Send a message or change decision"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: offer--to-tenant, booking-request--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Invite to book or decline"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-declined-by-advertiser--to-advertiser, special-offer--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Send a message or change decision"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-declined-by-advertiser--to-advertiser, book-request-cancelled-by-tenant--to-advertiser, offer-declined-by-advertiser--to-advertiser (below the listing card) -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-mint" target="_blank">
+                                        {{T "Edit listing"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-declined-by-advertiser--to-tenant, booking-request--to-tenant, booking-request--to-tenant, offer-declined-by-advertiser--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Find more rooms in city", City}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-cancelled-by-tenant--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Send a message or make an offer"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-cancelled-by-tenant--to-tenant (below the listing card) -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-mint" target="_blank">
+                                        {{T "Find more rooms in city", City}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: book-request-cancelled-by-tenant--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Request booking or send a message"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: special-offer--to-tenant,  -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Book now or decline"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: offer-declined-by-advertiser--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-orange" target="_blank">
+                                        {{T "Send a message or make a special offer"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- email: offer-declined-by-advertiser--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="p-y-20" align="center">
+                                    <a href="#" class="btn btn-mint" target="_blank">
+                                        {{T "Send a message or change decision"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <!-- END Button -->
+
+
+
+
+            <!-- Listing card -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-t-10">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <div class="listing">
+                                        <table class="table listing-table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td class="p-x-25 p-y-25" colspan="2">
+                                                    <h2 class="p-b-3">{{Street name}}</h2>
+                                                    <p class="big">{{Listing type}}</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="p-x-25" colspan="2">
+                                            <a class="link-base" href="#talk" target="_blank" border="0">
+                                                <img class="img listing-img" src="img/listing.jpg" alt="Street name photo">
+                                            </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="p-x-25 p-t-20 p-b-15">
+                                                    <h4 class="text-attention">
+                                                        {{T "Move in"}}
+                                                    </h4>
+                                                    <p class="text-base">
+                                                        {{14 Nov 2016}}
+                                                    </p>
+                                                </td>
+                                                <td class="p-x-25 p-t-20 p-b-15" align="right">
+                                                    <h4 class="text-attention">
+                                                        {{T "Move out"}}
+                                                    </h4>
+                                                    <p class="text-base">
+                                                        {{14 Nov 2016}}
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <!-- separator -->
+                                            <tr><td class="border-bottom" colspan="2"></td></tr>
+
+                                            <tr>
+                                                <td class="p-x-25 p-y-15">
+                                                    <p class="text-base">
+                                                        {{T "Monthly rent"}}
+                                                    </p>
+                                                </td>
+                                                <td class="p-x-25 p-y-15" align="right">
+                                                    <p class="text-base">
+                                                        625 EUR
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <!-- separator -->
+                                            <tr><td class="border-bottom" colspan="2"></td></tr>
+
+                                            <tr>
+                                                <td class="p-x-25 p-y-15 back-grey">
+                                                    <p class="text-base">
+                                                        {{T "First month s payment including service fee"}}
+                                                    </p>
+                                                </td>
+                                                <td class="p-x-25 p-y-15 back-grey" align="right">
+                                                    <p class="text-base-b">
+                                                        625 EUR
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- End Listing card -->
+
+
+
+            <!-- Time counter -->
+            <!-- booking-request--to-advertiser, offer--to-tenant, special-offer--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="top">
+                                    <div class="expire-message">
+                                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td class="p-x-25 p-y-10" width="20">
+                                                    <img class="img" src="img/icon-sandclock.png" alt="Sandclock" width="22" height="28">
+                                                </td>
+                                                <td class="p-y-10" valign="middle">
+                                                    <p class="small text-white">{{T "This inquiry expires on time if you do not respond", time}}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- END Time counter -->
+
+
+
+            <!-- Tips -->
+            <!-- Responce-advertiser, offer--to-advertiser, booking-request--to-advertiser, special-offer--to-tenant-->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-b-40 p-t-60">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="middle" align="center">
+                                    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="40%" valign="middle">
+                                                <div class="icon-separator border-bottom"></div>
+                                            </td>
+                                            <td class="icon-td p-x-25" align="center">
+                                                <img class="img" src="img/icon-tips.png" alt="Tips" width="48" height="61">
+                                            </td>
+                                            <td width="40%" valign="middle">
+                                                <div class="icon-separator border-bottom"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-y-40 p-x-25" valign="middle" align="center">
+                                    <h2 class="text-base-light">
+                                        <a href="#faq" class="text-base-light no-underline" target="_blank">
+                                            {{T "Respond within 48 hours"}}
+                                        </a>
+                                    </h2>
+                                    <p class="text-base-light big p-t-20" align="center">
+                                        {{T "Help name plan for their trip by responding within 24 hours. Taking longer than 24 hours to respond could negatively impact your response rate.", Name}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- booking-confirmation--to-advertiser -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-b-40 p-t-60">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="middle" align="center">
+                                    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="40%" valign="middle">
+                                                <div class="icon-separator border-bottom"></div>
+                                            </td>
+                                            <td class="icon-td p-x-25" align="center">
+                                                <img class="img" src="img/icon-hand-keys.png" alt="Tips" width="60" height="61">
+                                            </td>
+                                            <td width="40%" valign="middle">
+                                                <div class="icon-separator border-bottom"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-t-40 p-b-20 p-x-25" valign="middle" align="center">
+                                    <h2 class="text-base-light">
+                                        {{T "Agree on meeting"}}
+                                    </h2>
+                                    <p class="text-base-light big p-t-20" align="center">
+                                        {{T "Confirm that your guest knows how to get to your place and discuss what time you should meet there."}}
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-y-40 p-x-25" valign="middle" align="center">
+                                    <h2 class="text-base-light">
+                                        {{T "Tidy up"}}
+                                    </h2>
+                                    <p class="text-base-light big p-t-20" align="center">
+                                        {{T "Make sure that the place is clean and suitable for moving in."}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- booking-confirmation--to-tenant -->
+            <table width="640" class="mobile-view table table-vertical-border" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-b-40 p-t-60">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="middle" align="center">
+                                    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="40%" valign="middle">
+                                                <div class="icon-separator border-bottom"></div>
+                                            </td>
+                                            <td class="icon-td p-x-25" align="center">
+                                                <img class="img" src="img/icon-hand-keys.png" alt="Tips" width="60" height="61">
+                                            </td>
+                                            <td width="40%" valign="middle">
+                                                <div class="icon-separator border-bottom"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-t-40 p-b-20 p-x-25" valign="middle" align="center">
+                                    <h2 class="text-base-light">
+                                        {{T "Agree on meeting"}}
+                                    </h2>
+                                    <p class="text-base-light big p-t-20" align="center">
+                                        {{T "Confirm that you know how to get to the place and discuss what time you should meet there."}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- End Tips -->
+
+
+
+
+            <!-- FAQ -->
+            <table width="640" class="mobile-view table" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-x-25 p-y-40 back-grey radius-bottom">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td class="" valign="middle" align="center">
+                                    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="40%" valign="middle">
+                                                <div class="icon-separator border-bottom"></div>
+                                            </td>
+                                            <td class="icon-td p-x-25" align="center">
+                                                <img class="img" src="img/icon-faq.png" alt="Questions" width="50" height="50">
+                                            </td>
+                                            <td width="40%" valign="middle">
+                                                <div class="icon-separator border-bottom"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-y-40" valign="middle" align="center">
+                                    <h2 class="text-base-light">
+                                        <a href="#faq" class="text-base-light no-underline" target="_blank">
+                                           {{T "Need help? Check out our FAQ"}}
+                                        </a>
+                                    </h2>
+                                </td>
+                            </tr>
+
+                            <!-- Questions table -->
+                            <tr>
+                                <td class="p-b-20" align="center">
+                                    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td class="p-r-10 p-y-5" align="center" valign="top">
+                                                <img class="img icon-question" src="img/icon-question.png" alt="?" width="21" height="21">
+                                            </td>
+                                            <td class="p-y-5" valign="middle">
+                                                <p class="text text-base-light">
+                                                    <a class="text-base-light no-underline" href="#" target="_blank">
+                                                    What are the advantages of the secure booking service?
+                                                    </a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-r-10 p-y-5" align="center" valign="top">
+                                                <img class="img icon-question" src="img/icon-question.png" alt="?" width="21" height="21">
+                                            </td>
+                                            <td class="p-y-5" valign="middle">
+                                                <p class="text text-base-light">
+                                                    <a class="text-base-light no-underline" href="#" target="_blank">
+                                                    What are the advantages of the secure booking service?
+                                                    </a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-r-10 p-y-5" align="center" valign="top">
+                                                <img class="img icon-question" src="img/icon-question.png" alt="?" width="21" height="21">
+                                            </td>
+                                            <td class="p-y-5" valign="middle">
+                                                <p class="text text-base-light">
+                                                    <a class="text-base-light no-underline" href="#" target="_blank">
+                                                    The rent is not in my local currency. Can I use the daily exchange rate to transfer the rent in my own currency?
+                                                    </a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-r-10 p-y-5" align="center" valign="top">
+                                                <img class="img icon-question" src="img/icon-question.png" alt="?" width="21" height="21">
+                                            </td>
+                                            <td class="p-y-5" valign="middle">
+                                                <p class="text text-base-light">
+                                                    <a class="text-base-light no-underline" href="https://housinganywhere.com/answers" target="_blank">
+                                                    What are the advantages of the secure booking service?
+                                                    </a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END Questions table -->
+
+                            <tr>
+                                <td class="p-t-20 p-b-15" align="center">
+                                    <img class="img" src="img/icon-support.png" alt="Questions" width="37" height="40">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-b-20" align="center">
+                                    <h4>
+                                        <a class="text-attention" href="https://housinganywhere.com/contact" target="_blank">
+                                            {{T "Or just ask us. Our team of experts are here to help!"}}
+                                        </a>
+                                    </h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- End FAQ -->
+
+
+
+
+            <!-- blank -->
+            <table width="640" class="mobile-view table" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="p-y-0">
+                        <div class="indent">
+                            &nbsp;
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- End blank -->
+
+
+
+
+            <!-- Advertiser card -->
+            <table width="640" class="mobile-view table" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="">
+                        <div class="border radius p-b-15">
+                            <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td class="avatar-td p-y-25 p-x-25" valign="top">
+                                        <div class="avatar-circle">
+                                            <a class="link-base" href="#talk" target="_blank" border="0">
+                                                <img class="avatar-img" src="img/avatar.jpg" alt="Avatar">
+                                            </a>
+                                        </div>
+                                    </td>
+
+                                    <td class="p-r-10 p-t-5" valign="middle">
+                                        <p class="text-base-muted small strong uppercase" align="right">
+                                            {{T "Advertiser profile"}} <!-- TODO if the email is sent to advertiser show {{T "Your profile"}}-->
+                                        </p>
+
+                                        <h4 class="h4">
+                                            <a class="link-base" href="#talk" target="_blank">
+                                                Marionne
+                                            </a>
+                                        </h4>
+                                        <p class="text-base p-b-10">
+                                            {{T "from"}} the USA
+                                        </p>
+
+                                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td class="p-r-10 p-y-5" align="center" valign="top" width="12">
+                                                    <img class="img" src="img/icon-rate.png" width="12" height="12">
+                                                </td>
+                                                <td>
+                                                    <p class="text-base">
+                                                        {{T "Response rate"}}: <strong>100%</strong>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td class="p-r-10 p-y-5" align="center" valign="top" width="12">
+                                                    <img class="img" src="img/icon-time.png" width="11" height="12">
+                                                </td>
+                                                <td>
+                                                    <p class="text-base">
+                                                        {{T "Response time"}}: <strong>within an hour</strong>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- separator -->
+                                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="50%">
+                                            <tr><td class="border-bottom p-t-15" colspan="2"></td></tr>
+                                            <tr><td class="p-t-15" colspan="2"></td></tr>
+                                        </table>
+
+                                        <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td class="p-r-10" align="center" valign="middle" width="12">
+                                                    <img class="img" src="img/icon-thumb-up.png" width="13" height="12">
+                                                </td>
+                                                <td class="">
+                                                    <p class="text-attention">
+                                                        5 {{T "successful bookings"}} <!-- Show number of bookings or {{T "no bookings yet"}}-->
+                                                    </p>
+                                                </td>
+                                                <td class="p-l-40">
+                                                    <p class="text-base">
+                                                        45 {{T "listings"}} <!--Plural-->
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- End Advertiser card -->
+
+
+
+
+            <!-- Footer -->
+            <table width="640" class="mobile-view table" cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                    <td class="p-t-40" align="center">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td class="p-x-5">
+                                    <a class="link-base" href="https://www.facebook.com/HousingAnywherecom" target="_blank" border="0">
+                                        <img class="footer-icon" src="img/icon-facebook.png" alt="facebook" width="28" height="30">
+                                    </a>
+                                </td>
+                                <td class="p-x-5">
+                                    <a class="link-base" href="https://twitter.com/HousingAnywhere" target="_blank" border="0">
+                                        <img class="footer-icon" src="img/icon-twitter.png" alt="twitter" width="28" height="30">
+                                    </a>
+                                </td>
+                                <td class="p-x-5">
+                                    <a class="link-base" href="https://www.linkedin.com/company/housinganywhere-com" target="_blank" border="0">
+                                        <img class="footer-icon" src="img/icon-linkedin.png" alt="linkedin" width="28" height="30">
+                                    </a>
+                                </td>
+                                <td class="p-x-5">
+                                    <a class="link-base" href="https://www.youtube.com/user/HousingAnywhere" target="_blank" border="0">
+                                        <img class="footer-icon" src="img/icon-youtube.png" alt="youtube" width="28" height="30">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-b-15 p-t-25" align="center">
+                        <table class="table" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td class="p-x-5">
+                                    <a class="text-base-light strong no-underline small uppercase" href="https://housinganywhere.com/how-to-book" target="_blank" border="0">
+                                        {{T "How to book a place"}}
+                                    </a>
+                                </td>
+                                <td class="p-x-5">
+                                    <p class="text-base-light small">
+                                        &#9679;
+                                    </p>
+                                </td>
+                                <td class="p-x-5">
+                                    <a class="text-base-light strong no-underline small uppercase" href="https://housinganywhere.com/how-to-list" target="_blank" border="0">
+                                        {{T "How to list a property"}}
+                                    </a>
+                                </td>
+                                <td class="p-x-5">
+                                    <p class="text-base-light small">
+                                        &#9679;
+                                    </p>
+                                </td>
+                                <td class="p-x-5">
+                                    <a class="text-base-light strong no-underline small uppercase" href="https://housinganywhere.com/contact" target="_blank" border="0">
+                                        {{T "Contact us"}}
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="p-b-40" align="center">
+                        <table class="table table-footer" cellpadding="0" cellspacing="0" border="0" align="center">
+                            <tr>
+                                <td class="p-x-5">
+                                    <p class="text-base-light small" align="center">
+                                        {{T "You have received this email because you have signed up as a member to the Housing Anywhere website"}}
+                                    </p>
+                                    <p class="text-base-light small" align="center">
+                                        <a href="#" class="text-base-light" target="_blank">
+                                            {{T "Manage your email settings"}}
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- End Footer -->
+
         </td>
     </tr>
 </table>
